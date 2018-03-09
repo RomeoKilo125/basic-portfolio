@@ -5,6 +5,7 @@ body {
   background-image: url("../images/dust_scratches.png");
   font-size: 18px;
 }
+
 p {
   line-height: 2em;
   margin-bottom: 1em;
@@ -20,7 +21,7 @@ div {
 
 header {
   position: fixed;
-  top:0;
+  top: 0;
   width: 100%;
   border-bottom: solid #cccccc 2px;
   background-color: #ffffff;
@@ -67,7 +68,6 @@ header .container {
 .navItem a {
   color: #aaaaaa;
   text-decoration: none;
-
 }
 
 #bigBox {
@@ -76,7 +76,12 @@ header .container {
   margin-top: 100px;
   margin-bottom: 50px;
   background-color: #ffffff;
+}
 
+#bigBox::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 #headline {
@@ -105,16 +110,51 @@ h1, h2 {
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-h1{
+h1 {
   color: white;
   font-size: 45px;
   font-variant: small-caps;
-
 }
 
 h2 {
-color: #4aaaa5;
-font-weight: 700;
-font-size: 30px;
+  color: #4aaaa5;
+  font-weight: 700;
+  font-size: 30px;
+}
 
+.formInput {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  margin: 5px 0;
+  color: #777777;
+  border: #dddddd solid 1px;
+}
+
+#messageField {
+  height: 100px;
+}
+
+.button {
+  font-size: 18px;
+  background-color: #4aaaa5;
+  color: white;
+  padding: 10px 25px;
+}
+
+.portfolioItem {
+  float: left;
+  margin: 10px;
+  position: relative;
+}
+
+.portfolioLabel {
+  text-align: center;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 15px 0;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
 }

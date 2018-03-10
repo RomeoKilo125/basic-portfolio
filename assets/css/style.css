@@ -68,6 +68,7 @@ header .container {
 .navItem a {
   color: #aaaaaa;
   text-decoration: none;
+
 }
 
 #bigBox {
@@ -96,7 +97,7 @@ header .container {
 }
 
 footer {
-  position: sticky;
+  position: absolute;
   bottom: 0;
   width: 100%;
   border-top: solid #4aaaa5 5px;

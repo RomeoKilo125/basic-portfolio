@@ -71,6 +71,11 @@ header .container {
 
 }
 
+.navItem a:hover {
+  color: #777777;
+  text-decoration: underline;
+}
+
 #bigBox {
   border: #dddddd solid 3px;
   padding: 30px;
